@@ -1,0 +1,157 @@
+
+.patient-sidebar {
+  width: 255px;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #073b80, #07559e);
+  padding: 30px 18px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: white;
+}
+
+.patient-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+  margin-bottom: 55px;
+}
+
+.patient-logo > span:last-child {
+  color: #65d7e1;
+}
+
+.patient-logo-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: #27b9d0;
+  font-size: 30px;
+}
+
+.sidebar-title {
+  color: #a9c9ed;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding-left: 13px;
+  margin-bottom: 17px;
+}
+
+.patient-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.patient-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 10px;
+  color: #d3e5fa;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.patient-nav-link:hover,
+.patient-nav-link.active {
+  background: #218bd3;
+  color: white;
+}
+
+.patient-nav-icon {
+  width: 23px;
+  text-align: center;
+  font-size: 21px;
+}
+
+.sidebar-support {
+  background: rgba(255,255,255,0.09);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 14px;
+  padding: 16px;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.support-icon {
+  background: #26b8d0;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+}
+
+.sidebar-support h4 {
+  font-size: 13px;
+  margin: 12px 0 6px;
+}
+
+.sidebar-support p {
+  color: #c2d9f0;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.sidebar-support button {
+  width: 100%;
+  padding: 9px;
+  border: none;
+  border-radius: 8px;
+  color: #07509a;
+  background: white;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.patient-logout {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding: 17px 12px 0;
+  color: #dceaff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.patient-logout span {
+  font-size: 21px;
+}
+
+@media (max-width: 850px) {
+  .patient-sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .patient-logo {
+    margin-bottom: 22px;
+  }
+
+  .patient-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sidebar-support {
+    display: none;
+  }
+
+  .patient-logout {
+    margin-top: 15px;
+  }
+}
